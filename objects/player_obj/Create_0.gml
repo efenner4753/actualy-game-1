@@ -1,12 +1,12 @@
-/// @description Insert description here
+// @description Insert description here
 // You can write your code in this editor
 //movement
 xDirection = 0;
-xSpeed = 2;
+xSpeed = 4;
 xVector = xDirection * xSpeed;
 yGravity = .1;                         
 yVector = 0;                                                                                            
-jumpforce = -14;                                                                                             
+jumpforce = - 7;                                                                                             
 
 //global value
 global.coins = 0;

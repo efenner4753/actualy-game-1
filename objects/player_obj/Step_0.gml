@@ -3,7 +3,7 @@
 
 right = keyboard_check(vk_right);
 left = keyboard_check(vk_left);
-jump = keyboard_key_press(vk_space)
+jump = keyboard_check_pressed(vk_space)
 
 
 xDirection = right - left;
@@ -36,4 +36,9 @@ y = y + yVector;
 if place_meeting(x,y+1,flor and (jump))
 {
 yVector = jumpforce
+}
+
+if place_meeting(x,y,coin_obj)
+{
+	global.coins = global.coins + 1
 }
