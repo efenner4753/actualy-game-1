@@ -3,8 +3,8 @@
 
 right = keyboard_check(vk_right);
 left = keyboard_check(vk_left);
-jump = keyboard_check_pressed(vk_space)
-
+jump = keyboard_check(vk_space)
+ground = keyboard_check(vk_lcontrol)
 
 xDirection = right - left;
 
@@ -22,7 +22,7 @@ if (place_meeting(x + xVector, y, flor))
 
 x = x + xVector;
 
-		if (place_meeting(x, y + yVector, flor))
+if (place_meeting(x, y + yVector, flor))
 {
 while (!place_meeting(x, y + sign(yVector), flor))
 	{
@@ -35,10 +35,11 @@ y = y + yVector;
 
 if place_meeting(x,y+1,flor and (jump))
 {
-yVector = jumpforce
+	yVector = jumpforce
 }
 
-if place_meeting(x,y,coin_obj)
+if ground
 {
-	global.coins = global.coins + 1
+	yVector = yVector + 3
 }
+
