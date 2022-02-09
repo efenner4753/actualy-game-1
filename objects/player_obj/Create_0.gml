@@ -6,7 +6,7 @@ xSpeed = 4;
 xVector = xDirection * xSpeed;
 yGravity = .1;                         
 yVector = 0;                                                                                            
-jumpforce = - 7;                                                                                             
+jumpforce = -7;                                                                                             
 
 //global value
 global.coins = 0;
