@@ -43,20 +43,16 @@ if ground
 {
 	yVector = yVector + 3
 }
-if (keyboard_check_pressed(vk_shift + right)) and (can_dash = true) 
+if (keyboard_check_pressed(vk_shift)) && (can_dash = true) 
 {
     can_dash = false;
-    alarm[0] = 10;
-    yVector = yVector -2
+    alarm[0] = 5;
+  
+if xDirection = 1
+ yVector = yVector -2
 	xSpeed = xSpeed + 3
-	xDirection = 1
-}
 
-if (keyboard_check_pressed(vk_shift + left)) and (can_dash = true) 
-{
-    can_dash = false;
-    alarm[0] = 10;
-    yVector = yVector -2
+if xDirection = -1
+  yVector = yVector -2
 	xSpeed = xSpeed + 3
-	xDirection = 0
 }
