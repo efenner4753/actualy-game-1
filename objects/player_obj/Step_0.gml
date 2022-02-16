@@ -12,6 +12,11 @@ xDirection = right - left;
 xVector = xSpeed * xDirection;
 yVector = yVector + yGravity;
 
+if (alarm[0] == -1)
+{
+    alarm[0] = (room_speed * 10);
+}
+
 if (place_meeting(x + xVector, y, flor))
 {
 	while (!place_meeting(x + xDirection, y, flor))
@@ -34,7 +39,7 @@ while (!place_meeting(x, y + sign(yVector), flor))
 		
 y = y + yVector;
 
-if place_meeting(x,y+1,flor and (jump))
+if place_meeting(x,y+1,flor and jump)
 {
 	yVector = jumpforce
 }
@@ -46,7 +51,7 @@ if ground
 if (keyboard_check_pressed(vk_shift)) && (can_dash = true) 
 {
     can_dash = false;
-    alarm[0] = 5;
+    alarm[0] = 10;
   
 if xDirection = 1
  yVector = yVector -2
