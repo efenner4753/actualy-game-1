@@ -11,6 +11,14 @@ can_dash = true;
 dash_cooldown = 2.5;
 dashed = false
 
+enum states
+{
+collision
+dash
+jumping
+walking
+}
+
 //global value
 global.coins = 0;
 global.points = 0;
