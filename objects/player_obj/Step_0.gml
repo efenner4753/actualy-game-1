@@ -11,12 +11,6 @@ xDirection = right - left;
 
 xVector = xSpeed * xDirection;
 yVector = yVector + yGravity;
-
-if (alarm[0] = -1)
-{
-    alarm[0] = (room_speed * dash_cooldown);
-}
-
 if (place_meeting(x + xVector, y, flor))
 {
 	while (!place_meeting(x + xDirection, y, flor))
@@ -38,6 +32,11 @@ while (!place_meeting(x, y + sign(yVector), flor))
 }
 		
 y = y + yVector;
+
+if (alarm[0] = -1)
+{
+    alarm[0] = (room_speed * dash_cooldown);
+}
 
 if place_meeting(x,y+1,flor and (jump))
 {
