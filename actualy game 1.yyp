@@ -15,7 +15,6 @@
     {"id":{"name":"Sprite5","path":"sprites/Sprite5/Sprite5.yy",},"order":0,},
     {"id":{"name":"scoin","path":"sprites/scoin/scoin.yy",},"order":1,},
     {"id":{"name":"splayer","path":"sprites/splayer/splayer.yy",},"order":0,},
-    {"id":{"name":"collision","path":"scripts/collision/collision.yy",},"order":7,},
     {"id":{"name":"imput","path":"scripts/imput/imput.yy",},"order":1,},
     {"id":{"name":"shud","path":"sprites/shud/shud.yy",},"order":3,},
     {"id":{"name":"enemydmg","path":"scripts/enemydmg/enemydmg.yy",},"order":2,},
