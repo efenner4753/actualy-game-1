@@ -3,7 +3,7 @@
 
 right = keyboard_check(vk_right);
 left = keyboard_check(vk_left);
-jump = keyboard_check(vk_space)
+jump = keyboard_check_released(vk_space)
 ground = keyboard_check(vk_lcontrol)
 
 xDirection = right - left;
@@ -59,11 +59,5 @@ if xDirection = 1
 if xDirection = -1
   yVector = yVector -2;
 	xSpeed = xSpeed + 3;
-}
-
-if dashed = true 
-{
-	xSpeed = xSpeed -3;
-	dashed = false;
 }
 
