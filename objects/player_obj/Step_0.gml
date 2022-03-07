@@ -1,26 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
+Inputs();
 
-right = keyboard_check(vk_right);
-left = keyboard_check(vk_left);
-jump = keyboard_check_released(vk_space)
-ground = keyboard_check(vk_lcontrol)
 
-xDirection = right - left;
 
 xVector = xSpeed * xDirection;
+
+CheckCollisionX();
+
 yVector = yVector + yGravity;
-if (place_meeting(x + xVector, y, flor))
-{
-	while (!place_meeting(x + xDirection, y, flor))
-	{
-		x = x + xDirection;
-	}
-	xVector = 0;
-}
-
-x = x + xVector;
-
 if (place_meeting(x, y + yVector, flor))
 {
 while (!place_meeting(x, y + sign(yVector), flor))
@@ -37,7 +25,7 @@ if (alarm[0] = -1)
     alarm[0] = (room_speed * dash_cooldown);
 }
 
-if place_meeting(x,y+1,flor and (jump))
+if (place_meeting(x,y+1,flor) and (jump))
 {
 	yVector = jumpforce;
 }
@@ -48,7 +36,6 @@ if ground
 }
 if (keyboard_check_pressed(vk_shift)) && (can_dash = true) 
 {
-   dashed = true;
    can_dash = false;
     alarm[0] = 2.5;
   

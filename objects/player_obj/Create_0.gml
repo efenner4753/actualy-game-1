@@ -6,10 +6,9 @@ xSpeed = 7;
 xVector = xDirection * xSpeed;
 yGravity = .1;                         
 yVector = 0;                                                                                            
-jumpforce = -10;                                                                                             
+jumpforce = -8;                                                                                             
 can_dash = true;
 dash_cooldown = 2.5;
-dashed = false
 
 //global value
 global.coins = 0;
