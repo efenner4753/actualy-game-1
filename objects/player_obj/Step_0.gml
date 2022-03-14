@@ -9,16 +9,8 @@ xVector = xSpeed * xDirection;
 CheckCollisionX();
 
 yVector = yVector + yGravity;
-if (place_meeting(x, y + yVector, flor))
-{
-while (!place_meeting(x, y + sign(yVector), flor))
-	{
-		y = y+sign(yVector);
-	}
-	yVector = 0;
-}
-		
-y = y + yVector;
+
+CheckCollisionY();
 
 if (alarm[0] = -1)
 {
@@ -34,7 +26,12 @@ if ground
 {
 	yVector = yVector + 3;
 }
-if (keyboard_check_pressed(vk_shift)) && (can_dash = true) 
+
+if (place_meeting(x,y+1,cracked_flor) and (ground))
+{
+	instance_destroy(cracked_flor) 
+}
+if (keyboard_check_pressed(vk_shift) && (can_dash = true))
 {
    can_dash = false;
     alarm[0] = 2.5;
